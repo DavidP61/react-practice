@@ -19,17 +19,32 @@ const rotation = keyframes`
 
 }`;
 
+const Emoji = styled.p`
+  font-size: 36px;
+`;
+
 const Box = styled.div`
   height: 200px;
   width: 200px;
   background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: ${rotation} 2s linear infinite;
+  ${Emoji} {
+    &:hover {
+      font-size: 98px;
+    }  
+    }
+  }
 `;
 
 function App() {
   return (
     <Wrapper>
-      <Box></Box>
+      <Box>
+        <Emoji>😆</Emoji>
+      </Box>
     </Wrapper>
   );
 }
