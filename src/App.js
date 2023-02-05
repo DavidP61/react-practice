@@ -2,25 +2,15 @@ import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
   display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
-const rotation = keyframes`
-0% {
-  transform:rotate(0deg);
-  border-radius: 0px;
-}
-50% {
-  transform:rotate(360deg);
-  border-radius:100px;
-}
-100%{
-  transform:rotate(0deg);
-  border-radius:0px;
-
-}`;
-
-const Emoji = styled.p`
-  font-size: 36px;
+const Title = styled.h1`
+  color: ${(props) => props.theme.textColor};
 `;
 
 const Box = styled.div`
@@ -30,21 +20,12 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: ${rotation} 2s linear infinite;
-  ${Emoji} {
-    &:hover {
-      font-size: 98px;
-    }  
-    }
-  }
 `;
 
 function App() {
   return (
     <Wrapper>
-      <Box>
-        <Emoji>😆</Emoji>
-      </Box>
+      <Title>Hello</Title>
     </Wrapper>
   );
 }
