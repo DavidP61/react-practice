@@ -2,4 +2,4 @@
 
 
 1. React practice with Styled Css
-2. Typescript
+2. TypeScript
