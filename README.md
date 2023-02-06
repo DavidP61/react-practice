@@ -1,5 +1,4 @@
 # React Practice
 
+ React practice with Styled Css
 
-1. React practice with Styled Css
-2. TypeScript
